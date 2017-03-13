@@ -12,7 +12,6 @@ module.exports = {
   },
 
   module: {
-
     // apply loaders to files that meet given conditions
     loaders: [{
       test: /\.jsx?$/,
@@ -24,7 +23,7 @@ module.exports = {
     }
 
     ],
-  },
+  }
 
   // start Webpack in a watch mode, so Webpack will rebuild the bundle on changes
 
