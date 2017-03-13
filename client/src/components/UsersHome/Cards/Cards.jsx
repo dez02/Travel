@@ -1,10 +1,13 @@
 import React from 'react';
+import'./cards.css';
 
 class Cards extends React.Component{
 	render(){
 		return(
-			<div>
-			
+			<div className="cards">
+				<h1>jhjhjh</h1>
+
+				
 			</div>
 		);
 	}
