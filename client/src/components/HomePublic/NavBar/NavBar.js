@@ -309,4 +309,4 @@ class NavBar extends Component {
   }
 }
 
-export default Navbar;
+export default NavBar;

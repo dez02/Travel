@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar/NavBar.js'
-
-
-
+import NavBar from './NavBar/NavBar.js';
 
 class HomePublic extends Component {
   render() {
@@ -10,7 +7,7 @@ class HomePublic extends Component {
     return (
       <div className="">
 
-        <h1>Heloiuiue</h1>
+        <h1>Helolue</h1>
 
       </div>
     );
