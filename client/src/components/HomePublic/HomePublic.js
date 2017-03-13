@@ -6,8 +6,7 @@ class HomePublic extends Component {
     console.log('start app');
     return (
       <div className="">
-
-        <h1>Helolue</h1>
+        <NavBar/>
 
       </div>
     );
