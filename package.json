@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "start-dev": "nodemon --use_strict index.js",
-    "postinstall": "npm run build",
+    "postinstall": "npm run bundle",
     "bundle": "webpack",
     "bundle-dev": "webpack -w"
   },
