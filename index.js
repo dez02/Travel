@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const User = require('./server/app/models/user');
+const Travels = require('./server/app/models/travels');
 
 // Link To Database
 mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
@@ -17,7 +18,7 @@ apiRouter = express.Router();
 apiRouter.get('/users', (req, res) => {
 	User.find({}, (err, users) => {
 		if (err) throw err;
-
+    
 		res.json(users);
 	});
 });
