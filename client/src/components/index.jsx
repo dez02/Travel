@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePublic from'./HomePublic/HomePublic.js'
+import HomePublic from'./HomePublic/General/HomePublic.js'
 
 
 class Index extends React.Component {

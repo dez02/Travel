@@ -1,0 +1,45 @@
+.SectionHome{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    text-align: center;
+}
+
+.HomeItem{
+    height: 370px;
+    width: 220px;
+    border: black solid 2px;
+}
+
+.GroupHomeItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+
+.SectionHome button {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:17px 31px;
+	text-decoration:none;
+	text-shadow:0px 2px 8px #2f6627;
+}
+.SectionHome button:hover {
+	background-color:#5cbf2a;
+}
+.SectionHome button:active {
+	position:relative;
+	top:1px;
+}
