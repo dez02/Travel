@@ -10,7 +10,6 @@
     "start": "node index.js",
     "start-dev": "nodemon --use_strict index.js",
     "postinstall": "npm run bundle",
-	"postinstall": "webpack -p",
     "bundle": "webpack",
     "bundle-dev": "webpack -w"
   },
