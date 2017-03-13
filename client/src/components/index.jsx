@@ -7,6 +7,7 @@ export default class Index extends React.Component {
         return(
             <div>
                 <HomePublic/>
+                <h1>Hello boubi</h1>
             </div>
         )
     }

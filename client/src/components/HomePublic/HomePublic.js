@@ -8,9 +8,8 @@ class HomePublic extends Component {
   render() {
     console.log('start app');
     return (
-      <div className="HomePublic">
+      <div className="">
 
-        <NavBar/>
         <h1>Heloiuiue</h1>
 
       </div>

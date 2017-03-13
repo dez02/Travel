@@ -21,7 +21,9 @@ module.exports = {
       query: {
         presets: ["react", "es2015"]
       }
-    }],
+    }
+
+    ],
   },
 
   // start Webpack in a watch mode, so Webpack will rebuild the bundle on changes
