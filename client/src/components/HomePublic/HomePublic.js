@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './Navbar/NavBar.js'
+import NavBar from './NavBar/NavBar.js'
 
 
 
