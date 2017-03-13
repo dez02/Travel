@@ -4,7 +4,7 @@ const User = require('./server/app/models/user');
 const Travels = require('./server/app/models/travels');
 
 // Link To Database
-// mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
+mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
 
 const app = express();
 // tell the app to look for static files in these directories
@@ -15,13 +15,13 @@ app.use(express.static('./client/dist/'));
 // Create mini app for API
 apiRouter = express.Router();
 
-// apiRouter.get('/users', (req, res) => {
-// 	User.find({}, (err, users) => {
-// 		if (err) throw err;
-//
-// 		res.json(users);
-// 	});
-// });
+apiRouter.get('/users', (req, res) => {
+	User.find({}, (err, users) => {
+		if (err) throw err;
+
+		res.json(users);
+	});
+});
 
 app.use('/api', apiRouter);
 
