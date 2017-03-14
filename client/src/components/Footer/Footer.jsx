@@ -1,9 +1,9 @@
 import React from "react";
 import {render} from "react-dom";
-import './Footer.scss';
+import './footer.scss';
 
 
-class footer extends React.Component {
+class Footer extends React.Component {
   render () {
     return (
       <div className="footer">
@@ -34,7 +34,7 @@ class footer extends React.Component {
         </ul>
       <img src="google"/>  <div class="sous menu">
 
-        
+
 
         </div>
 
@@ -44,4 +44,4 @@ class footer extends React.Component {
   }
 }
 
-export default footer;
+export default Footer;
