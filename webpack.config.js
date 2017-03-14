@@ -21,18 +21,12 @@ module.exports = {
         presets: ["react", "es2015"]
       }
     },
-
     {
-
       test: /\.s?css$/,
-
       loaders: ['style-loader', 'css-loader', 'sass-loader'],
-
       include: path.join(__dirname, 'client/src')
-
      },
      {
-
       test: /\.(jpg|png|svg)$/,
         loader: 'file-loader',
           options: {
