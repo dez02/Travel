@@ -1,7 +1,7 @@
 const path = require('path');
 
-
 module.exports = {
+	devtool: 'source-map',
   // the entry file for the bundle
   entry: path.join(__dirname, '/client/src/app.jsx'),
 
@@ -12,7 +12,6 @@ module.exports = {
   },
 
   module: {
-
     // apply loaders to files that meet given conditions
     loaders: [{
       test: /\.jsx?$/,
@@ -21,9 +20,16 @@ module.exports = {
       query: {
         presets: ["react", "es2015"]
       }
-    }],
-  },
+    },
+    {
+         test: /\.s?css$/,
+         loaders: ['style-loader', 'css-loader', 'sass-loader'],
+         include: path.join(__dirname, 'client/src')
+     }
+
+    ],
+  }
 
   // start Webpack in a watch mode, so Webpack will rebuild the bundle on changes
-  watch: true
+
 };

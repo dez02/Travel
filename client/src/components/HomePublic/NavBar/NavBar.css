@@ -1,0 +1,59 @@
+
+/*NAVBAR*/
+/*==========================================*/
+/*====================*/
+
+p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button, input, select {
+    border: none;
+    box-shadow: none;
+    background-image: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*.navbar{
+    border : 1px solid black;
+    height : 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}*/
+
+.navbar-right{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height : 50px;
+    width: 200px;
+    padding-top: 8px;
+    padding-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.navbar a {
+   color: black;
+}
+
+.fa-user-circle-o{
+    color: black;
+    padding-right: 10px;
+}
