@@ -7,8 +7,8 @@ module.exports = {
 
   // the bundle file we will get in the result
   output: {
-    path: path.join(__dirname, '/client/dist/js'),
-    filename: 'app.js',
+    path: path.join(__dirname, '/client/dist/'),
+    filename: 'js/app.js',
   },
 
   module: {
@@ -21,8 +21,25 @@ module.exports = {
       query: {
         presets: ["react", "es2015"]
       }
-    }
+    },
 
+    {
+
+      test: /\.s?css$/,
+
+      loaders: ['style-loader', 'css-loader', 'sass-loader'],
+
+      include: path.join(__dirname, 'client/src')
+
+     },
+     {
+
+      test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+          options: {
+          name: 'image/[hash].[ext]',
+        }
+      }
     ],
   },
 

@@ -7,7 +7,7 @@ class HomePublic extends Component {
     return (
       <div className="">
 
-        <h1>Helolue</h1>
+        <h1></h1>
 
       </div>
     );

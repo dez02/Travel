@@ -1,6 +1,7 @@
 import React from 'react';
-import HomePublic from'./HomePublic/HomePublic.js'
+import HomePublic from './HomePublic/HomePublic.js'
 import Header from './UsersHome/Header/Header.jsx';
+import AddComponent from './UsersHome/AddComponent/AddComponent.jsx';
 import Cards from './UsersHome/Cards/Cards.jsx';
 
 
@@ -11,6 +12,7 @@ class Index extends React.Component {
             <div>
                 <HomePublic/>
                 <Header/>
+                <AddComponent/>
                 <Cards/>
 
             </div>
