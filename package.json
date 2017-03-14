@@ -16,6 +16,7 @@
     "body-parser": "^1.17.1",
     "css-loader": "^0.27.3",
     "express": "^4.15.2",
+    "file-loader": "^0.10.1",
     "material-ui": "^0.17.0",
     "mongoose": "^4.8.7",
     "node-sass": "^4.5.0",
@@ -25,7 +26,13 @@
     "react-tap-event-plugin": "^2.0.1",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.13.2",
+<<<<<<< HEAD
+    "url-loader": "^0.5.8",
+    "validator": "^7.0.0",
+    "webpack": "^2.2.1"
+=======
     "validator": "^7.0.0"
+>>>>>>> fcdcf72e87250b3aea3f879dd73ffa7bee557950
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -33,8 +40,13 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "css-loader": "^0.27.3",
+    "file-loader": "^0.10.1",
     "nodemon": "^1.11.0",
+<<<<<<< HEAD
+=======
     "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+>>>>>>> fcdcf72e87250b3aea3f879dd73ffa7bee557950
     "webpack": "^2.2.1"
   }
 }

@@ -7,8 +7,8 @@ module.exports = {
 
   // the bundle file we will get in the result
   output: {
-    path: path.join(__dirname, '/client/dist/js'),
-    filename: 'app.js',
+    path: path.join(__dirname, '/client/dist/'),
+    filename: 'js/app.js',
   },
 
   module: {
@@ -21,15 +21,38 @@ module.exports = {
         presets: ["react", "es2015"]
       }
     },
+<<<<<<< HEAD
+
+    {
+
+      test: /\.s?css$/,
+
+      loaders: ['style-loader', 'css-loader', 'sass-loader'],
+
+      include: path.join(__dirname, 'client/src')
+
+     },
+     {
+
+      test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+          options: {
+          name: 'image/[hash].[ext]',
+        }
+      }
+    ],
+  },
+=======
     {
          test: /\.s?css$/,
          loaders: ['style-loader', 'css-loader', 'sass-loader'],
          include: path.join(__dirname, 'client/src')
      }
 
-    ],
-  }
+    ]
+},
+>>>>>>> fcdcf72e87250b3aea3f879dd73ffa7bee557950
 
   // start Webpack in a watch mode, so Webpack will rebuild the bundle on changes
-
+  watch: true
 };

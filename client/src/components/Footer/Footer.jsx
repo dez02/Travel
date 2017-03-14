@@ -1,9 +1,9 @@
 import React from "react";
 import {render} from "react-dom";
-import './Footer.scss';
+import './footer.scss';
 
 
-class footer extends React.Component {
+class Footer extends React.Component {
   render () {
     return (
       <div className="footer">
@@ -32,6 +32,7 @@ class footer extends React.Component {
           <li> number </li>
           <li>text text text</li>
         </ul>
+
       <ul>
         <i class="fa fa-twitter" aria-hidden="true"></i>
         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -44,9 +45,8 @@ class footer extends React.Component {
         </div>
 
 
-      </div>
     );
   }
 }
 
-export default footer;
+export default Footer;
