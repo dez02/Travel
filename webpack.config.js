@@ -25,6 +25,14 @@ module.exports = {
          test: /\.s?css$/,
          loaders: ['style-loader', 'css-loader', 'sass-loader'],
          include: path.join(__dirname, 'client/src')
+     },
+     {
+
+     test: /\.(jpg|png|svg)$/,
+       loader: 'file-loader',
+         options: {
+         name: 'image/[hash].[ext]',
+       }
      }
 
     ]
