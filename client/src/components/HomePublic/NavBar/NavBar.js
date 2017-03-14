@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './NavBar.css';
 
 class NavBar extends Component {
- 
+
     // inserer fonction js avec syntaxe REACT
   render() {
 
@@ -15,7 +15,7 @@ class NavBar extends Component {
       </div>
        </a>
     </div>
-   
+
     );
   }
 
