@@ -1,0 +1,12 @@
+
+p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.HeaderHomePublic{
+    background-color: #E9E9E9;
+    width: 100%;
+    height: 100vh;
+}

@@ -12,7 +12,6 @@ module.exports = {
   },
 
   module: {
-
     // apply loaders to files that meet given conditions
     loaders: [{
       test: /\.jsx?$/,
@@ -22,6 +21,7 @@ module.exports = {
         presets: ["react", "es2015"]
       }
     },
+<<<<<<< HEAD
 
     {
 
@@ -42,7 +42,17 @@ module.exports = {
       }
     ],
   },
+=======
+    {
+         test: /\.s?css$/,
+         loaders: ['style-loader', 'css-loader', 'sass-loader'],
+         include: path.join(__dirname, 'client/src')
+     }
+
+    ]
+},
+>>>>>>> fcdcf72e87250b3aea3f879dd73ffa7bee557950
 
   // start Webpack in a watch mode, so Webpack will rebuild the bundle on changes
-
+  watch: true
 };
