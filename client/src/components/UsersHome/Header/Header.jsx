@@ -1,5 +1,5 @@
 import React from 'react';
-import image from'./../../../image/headerPublicHome.jpg';
+import image from'./../../Images/headerPublicHome.jpg';
 
 class Header extends React.Component{
 	render(){

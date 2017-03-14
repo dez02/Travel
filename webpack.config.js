@@ -21,8 +21,6 @@ module.exports = {
         presets: ["react", "es2015"]
       }
     },
-
-
     {
 
       test: /\.s?css$/,
@@ -40,17 +38,6 @@ module.exports = {
           name: 'image/[hash].[ext]',
         }
       }
-    ],
-  },
-
-    {
-         test: /\.s?css$/,
-         loaders: ['style-loader', 'css-loader', 'sass-loader'],
-         include: path.join(__dirname, 'client/src')
-     }
-
-    ]
-},
 
   // start Webpack in a watch mode, so Webpack will rebuild the bundle on changes
   watch: true

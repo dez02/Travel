@@ -6,7 +6,13 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
 }
 
 .HeaderHomePublic{
-    background-color: #E9E9E9;
+    /*background-color: #E9E9E9;*/
     width: 100%;
     height: 100vh;
+}
+
+.HeaderHomeBack{
+    width: 100%;
+    height: 100vh;
+    backface-visibility: hidden;
 }
