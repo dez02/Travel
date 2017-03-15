@@ -12,7 +12,7 @@
     "start-dev": "nodemon --use_strict index.js",
     "bundle": "webpack",
     "bundle-dev": "webpack -w",
-	"heroku-postbuild": "npm run bundle"
+	"postinstall": "npm run bundle"
   },
   "author": "",
   "license": "ISC",
