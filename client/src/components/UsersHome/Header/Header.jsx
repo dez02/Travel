@@ -1,12 +1,15 @@
 import React from 'react';
-import image from'./../../../image/headerPublicHome.jpg';
+import image from'./../../Images/headerPublicHome.jpg';
+import './header.css';
 
 class Header extends React.Component{
 	render(){
 		return(
-			<div className="header">
+			<div className="UserHeader">
 				<img src={image} alt=""/>
-				<button className="ticket">ACHETE TON TICKET POUR PARTIR A L AVENTURE</button>
+				<div>
+				<button className="validation">ACHETE TON TICKET POUR PARTIR A L AVENTURE</button>
+				</div>
 			</div>
 		);
 	}
