@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './headerhomepublic.css';
+import BackgroundHome from './../../Images/headerPublicHome.jpg';
 
 class HeaderHomePublic extends Component {
  
@@ -8,6 +9,7 @@ class HeaderHomePublic extends Component {
 
     return (
     <div className="HeaderHomePublic">
+      <img src={BackgroundHome} className="HeaderHomeBack" alt="BetngoHome"/>
       </div>
     );
   }

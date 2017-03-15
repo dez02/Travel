@@ -1,8 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import HomePublic from'./HomePublic/General/HomePublic.js';
 import UsersHome from './UsersHome/GeneralUsersHome/UsersHome.jsx';
-
 import Footer from './Footer/Footer.jsx';
+
 
 
 class Index extends React.Component {
@@ -12,6 +13,7 @@ class Index extends React.Component {
                 <HomePublic/>
                 <UsersHome/>
 				<Footer/>
+
             </div>
         )
     }

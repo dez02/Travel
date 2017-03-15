@@ -32,14 +32,19 @@ class Footer extends React.Component {
           <li> number </li>
           <li>text text text</li>
         </ul>
-      <img src="google"/>  <div class="sous menu">
 
+      <ul>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-google" aria-hidden="true"></i>
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+        <i class="fa fa-paypal" aria-hidden="true"></i>
 
+      </ul>
 
         </div>
 
 
-      </div>
     );
   }
 }
