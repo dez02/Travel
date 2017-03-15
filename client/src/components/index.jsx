@@ -1,8 +1,7 @@
 import React from 'react';
-import HomePublic from'./HomePublic/General/HomePublic.js'
-import Header from './UsersHome/Header/Header.jsx';
-import AddComponent from './UsersHome/AddComponent/AddComponent.jsx';
-import Cards from './UsersHome/Cards/Cards.jsx';
+<<<<<<< HEAD
+import HomePublic from'./HomePublic/General/HomePublic.js';
+import UsersHome from './UsersHome/GeneralUsersHome/UsersHome.jsx';
 import Footer from './Footer/Footer.jsx';
 
 
@@ -12,11 +11,8 @@ class Index extends React.Component {
         return(
             <div>
                 <HomePublic/>
-                <Header/>
-                <AddComponent/>
-                <Cards/>
-                <Footer/>
-
+                <UsersHome/>
+				<Footer/>
 
             </div>
         )

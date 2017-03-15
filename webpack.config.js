@@ -11,8 +11,7 @@ module.exports = {
     filename: 'js/app.js'
   },
 
-  module: {
-    // apply loaders to files that meet given conditions
+
     loaders: [
       {
         test: /\.jsx?$/,
@@ -34,6 +33,7 @@ module.exports = {
           name: 'image/[hash].[ext]'
         }
       }
+
     ]
   }
 
