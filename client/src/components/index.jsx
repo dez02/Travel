@@ -10,8 +10,13 @@ class Index extends React.Component {
         return(
             <div>
                 <HomePublic/>
+                <Header/>
+                <AddComponent/>
+                <Cards/>
+                <Footer/>
                 <UsersHome/>
 				<Footer/>
+
 
             </div>
         )
