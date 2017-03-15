@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import HomePublic from'./HomePublic/General/HomePublic.js';
 import UsersHome from './UsersHome/GeneralUsersHome/UsersHome.jsx';
 import Footer from './Footer/Footer.jsx';
