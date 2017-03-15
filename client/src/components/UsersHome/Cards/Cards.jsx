@@ -8,9 +8,9 @@ class Cards extends React.Component{
 			<div className="grid">
 				<div className="item"></div>
 				<div className="item"></div>
-				<div className="item"></div>							
 				<div className="item"></div>
-			</div>				
+				<div className="item"></div>
+			</div>
 			</div>
 		);
 	}
