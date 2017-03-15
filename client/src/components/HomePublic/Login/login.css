@@ -1,0 +1,61 @@
+.LoginForm{
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    font-family: roboto, sans-serif;
+    margin-top: 50px;
+    /*position: absolute;
+    top: 20px;
+    left: 22%;
+    display: none;*/
+}
+
+.LoginForm h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.LoginForm label p{
+    color: white;
+    font-size: 30px;
+    padding-right: 10px;
+
+}
+
+.LoginForm label{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.LoginForm label input {
+    color: #8A9297;
+    font-size: 30px;
+    border: 2px solid #179B77;
+    width: 60%;
+}
+
+.loginButton {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
