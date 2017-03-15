@@ -11,7 +11,7 @@ module.exports = {
     filename: 'js/app.js'
   },
 
-
+  module: {
     loaders: [
       {
         test: /\.jsx?$/,
