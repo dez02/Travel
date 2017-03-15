@@ -16,8 +16,6 @@ class Index extends React.Component {
                 <AddComponent/>
                 <Cards/>
                 <Footer/>
-
-
             </div>
         )
     }
