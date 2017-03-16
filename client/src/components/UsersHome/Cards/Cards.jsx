@@ -1,10 +1,5 @@
 import React from 'react';
 import'./cards.css';
-import backgroundAventurier from './../../Images/aventure.jpg';
-import backgroundBlingbling from './../../Images/blingbling.jpg';
-import backgroundInsolite   from './../../Images/insolite.jpg';
-import backgroundFlemmard from './../../Images/flemmard.jpg';
-
 
 class Cards extends React.Component{
 	render(){
@@ -13,19 +8,15 @@ class Cards extends React.Component{
 			<div className="SectionMainTheme">
 	        <div className="SectionTheme">
 						<div className="GroupTheme">
-	            <div className="Theme">
-	              <img src={ backgroundAventurier} className="ThemeCard" alt="ImgTheme"/>
+	            <div className="Theme aventurier">
 	            </div>
-	            <div className="Theme">
-	              <img src={backgroundBlingbling} className="ThemeCard" alt="ImgTheme"/>
+	            <div className="Theme blingbling">
 	            </div>
 						</div>
 						<div className='GroupTheme'>
-	            <div className="Theme">
-	              <img src={backgroundFlemmard} className="ThemeCard" alt="ImgTheme"/>
+	            <div className="Theme flemmard">
 	            </div>
-							<div className="Theme">
-								<img src={backgroundInsolite} className="ThemeCard" alt="ImgTheme"/>
+							<div className="Theme insolite">
 							</div>
 						</div>
 	        </div>
