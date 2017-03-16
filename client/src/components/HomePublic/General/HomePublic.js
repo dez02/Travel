@@ -47,7 +47,14 @@ class HomePublic extends Component {
         <HeaderHomePublic/>
         <SectionHome/>
         <div onClick={this.handleClickBottom}>
-          <ScrollToTop style="position: fixed; bottom: 150px; right: 30px; cursor: pointer; transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible;" showUnder={160}>
+          <ScrollToTop style={{
+  position: 'relative',
+  bottom: 50,
+  cursor: 'pointer',
+  transitionDuration: '0.2s',
+  transitionTimingFunction: 'linear',
+  transitionDelay: '0s'
+}} showUnder={160}>
           <ButtonHomePublic/>
           </ScrollToTop>
         </div>
