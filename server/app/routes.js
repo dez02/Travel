@@ -50,7 +50,7 @@ apiRouter.route('/users')
     }
     // Redirige vers Home Public quand utilisateur validé.
 	// res.send(this.password);
-	res.redirect('/');
+	res.redirect(`/#/home/:${user.mail}`);
   });
 });
 

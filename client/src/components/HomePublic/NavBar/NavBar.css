@@ -23,17 +23,8 @@ button, input, select {
     appearance: none;
 }
 
-/*.navbar{
-    border : 1px solid black;
-    height : 50px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}*/
 
-.navbar-right{
+.navbar-right button{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -43,17 +34,20 @@ button, input, select {
     padding-top: 8px;
     padding-right: 15px;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: #fff;
     position: absolute;
     right: 10px;
     top: 1px;
+    outline: none;
 }
 
-.navbar a {
-   color: black;
+.navbar-right button {
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
 }
 
 .fa-user-circle-o{
-    color: black;
+    color: #fff;
     padding-right: 10px;
 }
