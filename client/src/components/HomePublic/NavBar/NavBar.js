@@ -38,7 +38,6 @@ console.log('hello navbar render');
           <i className="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
           <div><p>Sign-up</p></div>
           </button>
-          <p>{this.state.user.firstName}</p>
       </div>
        
     </div>
