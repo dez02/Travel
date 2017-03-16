@@ -6,6 +6,7 @@ import HeaderHomePublic from '.././HeaderHomePublic/HeaderHomePublic.js';
 import SectionHome from '.././SectionHome/SectionHome.js';
 import ButtonHomePublic from '.././ButtonHomePublic/ButtonHomePublic.js';
 import Login from '.././Login/Login.js';
+import Footer from '../../Footer/Footer.jsx';
 
 class HomePublic extends Component {
 
@@ -50,6 +51,7 @@ class HomePublic extends Component {
           <ButtonHomePublic/>
           </ScrollToTop>
         </div>
+        <Footer/>
         <div className="loginDiv" style={{display:this.state.isToggleOn ? 'block' : 'none'}}>
           <Login/>
         </div>
