@@ -9,14 +9,14 @@ import Footer from './Footer/Footer.jsx';
 
 
 class Index extends React.Component {
+
     render(){
         return(
+            <HomePublic/>
             <div>
                 <HomePublic/>
                 <UsersHome/>
 				<Footer/>
-
-
             </div>
         )
     }

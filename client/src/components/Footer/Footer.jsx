@@ -1,9 +1,9 @@
 import React from "react";
 import {render} from "react-dom";
 import './footer.scss';
-import payment from "../Images/Paypal_payment_icon.png";
 
 class Footer extends React.Component {
+
   render () {
     return (
       <div className="footer">

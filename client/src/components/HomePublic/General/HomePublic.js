@@ -8,11 +8,6 @@ import Login from '.././Login/Login.js';
 class HomePublic extends Component {
 
 
-
-
-
-
-
   render() {
     console.log('start app');
     return (
