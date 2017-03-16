@@ -53,20 +53,18 @@ class Footer extends React.Component {
             <p>* Prix TTC/pers., base chambre double.<br />
             (1) (prix d un appel local). 15 € de frais par dossier, en cas de réservation par téléphone. </p>
           </div>
-          <div className="icônes">
-            <img src={Imageamericanex} className="amex" alt="icônes"/>
-            <img src={Imagevisa} className="visa" alt="icônes"/>
-            <img src={Imagemastercard} className="mastercard" alt="icônes"/>
-            <img src={Imagelogo} className="logo" alt="icônes"/>
-
-
-
-
-            
+          <div className="icones_footer">
+          <div className="icones_bloc">
+            <img src={Imageamericanex} className="icone" alt="icônes"/>
+            <img src={Imagevisa} className="icone" alt="icônes"/>
+            <img src={Imagemastercard} className="icone" alt="icônes"/>
+            </div>
+          <div className="logo_footer">
+            <img src={Imagelogo} className="logo" alt="icônes"/>            
+          </div>
           </div>
     </div>
    
-
 
     );
   }

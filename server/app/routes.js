@@ -57,10 +57,13 @@ apiRouter.route('/users')
 // See user profile, update or delete
 apiRouter.route('/user/:user_id').get((req, res) => {
   User.findById(req.params.user_id, (err, user) => {
-    if (err) {
-      throw err;
-    }
-    res.json(user);
+	// if (user == undefined) {
+	// 	res.redirect('/#/');
+	// } else {
+		if (err) {
+			throw err;
+		}
+		res.json(user);
   });
 });
 
