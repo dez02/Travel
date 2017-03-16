@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './NavBar.css';
 
 class NavBar extends Component {
+constructor(props) {
+	super(props);
+	this.state = {user: []};
+}
+
 
     // inserer fonction js avec syntaxe REACT
   render() {

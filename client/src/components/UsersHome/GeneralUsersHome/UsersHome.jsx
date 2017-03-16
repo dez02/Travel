@@ -12,7 +12,6 @@ class UsersHome extends React.Component {
                 <Header/>
                 <AddComponent/>
                 <Cards/>
-				
             </div>
         )
     }

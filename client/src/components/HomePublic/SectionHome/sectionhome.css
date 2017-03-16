@@ -1,82 +1,126 @@
-.SectionHome{
+.SectionHome {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     width: 100%;
-    height: 100vh;
-    color: black;
+    color: rgb(80, 80, 80);
     text-align: center;
 }
 
-.HomeItem{
-    height: 330px;
-    width: 260px;
-	margin-right: 40px;
-	margin-left: 40px;
-	cursor:pointer;
-	-moz-box-shadow: 5px 5px 5px 0px #656565;
-	-webkit-box-shadow: 5px 5px 5px 0px #656565;
-	-o-box-shadow: 5px 5px 5px 0px #656565;
-	box-shadow: 5px 5px 5px 0px #656565;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+.SectionHome-description {
+	padding: 50px 10%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-.GroupHomeItem{
+.SectionHome-description span {
+	color: #44c767;
+	font-weight: bold;
+}
+
+.SectionHome-description p {
+	font-size: 1.3rem;
+	width: 60%;
+	line-height: 2rem;
+}
+
+.SectionHome-description p:first-of-type {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.SectionHome-title {
+	color: #44c767;
+	font-weight: bold;
+	font-size: 3rem;
+	margin: 30px auto;
+}
+
+.SectionHome-subtitle {
+	color: #44c767;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.HomeItem {
+    border: 1px solid #cccccc;
+    width: 260px;
+    margin: 10px 3%;
+    cursor: pointer;
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.3), Direction=134, Strength=5);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.HomeItem>div{
+	padding: 30px 5px;
+}
+
+.GroupHomeItem {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-	margin-top: 20px;
-	margin-right: 60px;
-	margin-left: 60px;
+    justify-content: center;
+    padding: 20px 10%;
 }
-
-
 
 .SectionHome button {
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	letter-spacing: 2px;
-	font-size:17px;
-	padding:17px 31px;
-	text-decoration:none;
-	text-shadow:0px 2px 8px #2f6627;
-	margin-top: 50px;
+    background-color: #44c767;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 17px 31px;
+    text-decoration: none;
+    text-shadow: 0px 2px 8px #2f6627;
+    margin-top: 50px;
 }
+
 .SectionHome button:hover {
-	background-color:#5cbf2a;
+    background-color: #5cbf2a;
 }
+
 .SectionHome button:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
-.SectionHome h2, .SectionHome h4{
-	margin-top: 25px;
+
+.HomeItem:nth-child(1) .HomeCard {
+	background-image: url('./../../Images/bragh.jpg');
+}
+.HomeItem:nth-child(2) .HomeCard {
+	background-image: url('./../../Images/boston.jpg');
+}
+.HomeItem:nth-child(3) .HomeCard {
+	background-image: url('./../../Images/rome.jpg');
 }
 
-.SectionHome h3{
-	margin-top: 15px;
+.HomeItem .HomeCard {
+	background-size: cover;
+	padding: 0;
+    width: 100%;
+    height: 180px;
+    border-radius: 4px 4px 0 0;
 }
 
-.HomeCard{
-	width: 100%;
-	height: 160px;
+.HomeItem h2 {
+    margin: 0;
+    font-size: 1.2em;
+	font-weight: bold;
+	color: #44c767;
 }
 
-.HomeItem h2{
-	margin-top: 10px;
-	font-size: 1em;
-}
-
-.HomeItem p{
-	margin-top: 10px;
-
+.HomeItem p {
+    margin-top: 10px;
 }
