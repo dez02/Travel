@@ -18,7 +18,7 @@ class Cards extends React.Component{
 				<div className="item"></div>
 			</div>
 
-			</div>
+			
 		);
 	}
 }
