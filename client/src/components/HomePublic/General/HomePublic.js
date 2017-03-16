@@ -7,16 +7,36 @@ import Login from '.././Login/Login.js';
 
 class HomePublic extends Component {
 
+ constructor(props) {
+    super(props);
+    this.state = {isToggleOn: false};
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+    // this.preventDefault();
+  }
+
+  handleClick() { 
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
 
   render() {
     console.log('start app');
+
+
+
+
     return (
       <div className="">
-        <NavBar/>
+        <div onClick={this.handleClick} >
+          <NavBar/>
+        </div>
         <HeaderHomePublic/>
         <SectionHome/>
-        <div className="loginDiv">
-        <Login/>
+        <div className="loginDiv" style={{display:this.state.isToggleOn ? 'block' : 'none'}}>
+          <Login/>
         </div>
       </div>
      
