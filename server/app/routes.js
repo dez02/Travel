@@ -26,6 +26,7 @@ apiRouter.route('/users')
   User.find({}, (err, users) => {
     if (err) {
       throw err;
+
     }
     res.json(users);
   });
@@ -33,9 +34,10 @@ apiRouter.route('/users')
 // Add new user
   .post((req, res) => {
   var user = new User;
-  user.name = req.body.name;
-  user.username = req.body.username;
-  user.password = req.body.password;
+  user.firstName = req.body.prenom;
+  user.lastName = req.body.nom;
+  user.mail = req.body.mail;
+  user.password = req.body.motdepasse;
   user.admin = false;
 
   user.save(err => {
@@ -46,7 +48,9 @@ apiRouter.route('/users')
         return res.send(err);
       }
     }
-    res.json({message: "GG ! L'utilisateur est ajouté !"});
+    // Redirige vers Home Public quand utilisateur validé.
+	// res.send(this.password);
+	res.redirect('/');
   });
 });
 

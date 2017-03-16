@@ -25,63 +25,63 @@ class Login extends React.Component {
     const name = target.name;
 
     this.setState({
-      [name]: value    
+      [name]: value
     });
   }
 
   handleSubmit(event) {
     alert('Tu es désormais inscrit chez Bet and Go :)' + " " +  'Ton nom est: ' + this.state.nom + " " + this.state.prenom);
-    event.preventDefault();
+    // event.preventDefault();
   }
 
   render() {
 
     return (
-        <form className="LoginForm" onSubmit={this.handleSubmit}>
+        <form className="LoginForm" method="post" action="/api/users"onSubmit={this.handleSubmit}>
           <h1>Sign Up for Free</h1>
           <div className="formName">
             <label>
                 <p>FirstName:</p>
-                <input type="text" 
-                required 
+                <input type="text"
+                required
                 name="prenom"
                 type="string"
-                value={this.state.prenom} 
+                value={this.state.prenom}
                 onChange={this.handleChange}
                 />
             </label>
             <label>
                 <p>SecondName:</p>
-                <input type="text" 
+                <input type="text"
                 required
                 name="nom"
                 type="string"
-                value={this.state.nom} 
+                value={this.state.nom}
                 onChange={this.handleChange}
                 />
             </label>
             <label>
                 <p>Email Adress:</p>
-                <input type="text" 
-                required 
+                <input type="text"
+                required
                 name="mail"
                 type="string"
-                value={this.state.mail} 
+                value={this.state.mail}
                 onChange={this.handleChange}
                 />
             </label>
             <label>
                 <p>Password:</p>
                 <input type="text"
-                required 
+                required
                 name="motdepasse"
                 type="string"
-                value={this.state.motdepasse} 
+                value={this.state.motdepasse}
                 onChange={this.handleChange}
                 />
             </label>
           </div>
-            <input className="loginButton" type="submit" value="Submit" />
+            <input className="loginButton" type="submit" value="Submit" method="post" action="/api/users"/>
         </form>
     );
   }
