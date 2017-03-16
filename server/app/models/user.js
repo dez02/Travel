@@ -14,25 +14,25 @@ const userSchema = new Schema({
 
 
 // Hash password
-userSchema.pre('save', (next) => {
-	const user = this;
-	// Hash password only if user has change or is new
-	// if (!user.isModified('password')) return next();
-	// Generate the hash
-	bcrypt.hash(user.password, null, null, (err, hash) => {
-		if (err) return next(err);
-		// Change password to hashed version
-		user.password = hash;
-		console.log(this);
-		next();
-	});
-});
-
-// Compare password to the Database hash
-userSchema.methods.comparePassword = password => {
-	const user = this;
-	return bcrypt.compareSync(password, user.password);
-}
+// userSchema.pre('save', (next) => {
+// 	const user = this;
+// 	// Hash password only if user has change or is new
+// 	// if (!user.isModified('password')) return next();
+// 	// Generate the hash
+// 	bcrypt.hash(user.password, null, null, (err, hash) => {
+// 		if (err) return next(err);
+// 		// Change password to hashed version
+// 		user.password = hash;
+// 		console.log(this);
+// 		next();
+// 	});
+// });
+//
+// // Compare password to the Database hash
+// userSchema.methods.comparePassword = password => {
+// 	const user = this;
+// 	return bcrypt.compareSync(password, user.password);
+// }
 
 // return the model
 const User = mongoose.model('User', userSchema);
