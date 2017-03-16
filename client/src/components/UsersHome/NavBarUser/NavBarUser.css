@@ -51,3 +51,8 @@ button, input, select {
     color: #fff;
     padding-right: 10px;
 }
+
+
+.NavBarUser-username {
+	text-transform: capitalize;
+}
