@@ -10,5 +10,6 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={HomePublic}></Route>
     <Route path="/home" component={UsersHome}></Route>
+    {/* <Route path="/home/:user_id" component={UsersHome}></Route> */}
   </Router>
 ), document.getElementById('react-app'))
