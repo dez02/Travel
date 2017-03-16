@@ -1,5 +1,14 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import Index from'./components/index.jsx';
+import ReactDOM from 'react-dom';
+import HomePublic from './components/HomePublic/General/HomePublic.js';
+import UsersHome from './components/UsersHome/GeneralUsersHome/UsersHome.jsx';
+import NavBar from './components/HomePublic/NavBar/NavBar';
 
-ReactDom.render(<Index/>, document.getElementById('react-app'));
+import {Router, Route, hashHistory} from 'react-router';
+
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path="/" component={HomePublic}></Route>
+    <Route path="/home" component={UsersHome}></Route>
+  </Router>
+), document.getElementById('react-app'))
