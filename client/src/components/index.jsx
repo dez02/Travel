@@ -8,18 +8,11 @@ import Footer from './Footer/Footer.jsx';
 
 
 class Index extends React.Component {
+
     render(){
         return(
-            <div>
-                <HomePublic/>
-                <Header/>
-                <AddComponent/>
-                <Cards/>
-                <Footer/>
-
-
-            </div>
-        )
+            <HomePublic/>
+        );
     }
 }
 
