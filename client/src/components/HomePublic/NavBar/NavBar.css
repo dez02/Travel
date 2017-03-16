@@ -1,6 +1,9 @@
-
 /*NAVBAR*/
+
+
 /*==========================================*/
+
+
 /*====================*/
 
 p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
@@ -23,31 +26,30 @@ button, input, select {
     appearance: none;
 }
 
-
-.navbar-right button{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    height : 50px;
-    width: 200px;
-    padding-top: 8px;
-    padding-right: 15px;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    position: absolute;
-    right: 10px;
-    top: 1px;
-    outline: none;
-}
-
 .navbar-right button {
-   color: #fff;
-   font-family: 'Roboto', sans-serif;
-   font-size: 15px;
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: flex-end;*/
+    /*height: 50px;*/
+    /*width: 200px;*/
+    /*padding-top: 8px;
+    padding-right: 15px;*/
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    outline: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
-.fa-user-circle-o{
+.fa-user-circle-o {
     color: #fff;
     padding-right: 10px;
+}
+
+.NavBar-log {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
 }
