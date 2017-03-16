@@ -1,24 +1,36 @@
 import React from 'react';
 import'./cards.css';
-import imageflemmard from './../../Images/flemmard.jpg';
+import backgroundAventurier from './../../Images/aventure.jpg';
+import backgroundBlingbling from './../../Images/blingbling.jpg';
+import backgroundInsolite   from './../../Images/insolite.jpg';
+import backgroundFlemmard from './../../Images/flemmard.jpg';
 
 
 class Cards extends React.Component{
 	render(){
 		return(
-			
-			<div className="grid">
-				<div className="item">
-					<img src={imageflemmard} className="userscard" alt="travelBetnGo"/>
 
-					
-				</div>
-				<div className="item"></div>
-				<div className="item"></div>
-				<div className="item"></div>
-			</div>
+			<div className="SectionMainTheme">
+	        <div className="SectionTheme">
+						<div className="GroupTheme">
+	            <div className="Theme">
+	              <img src={ backgroundAventurier} className="ThemeCard" alt="ImgTheme"/>
+	            </div>
+	            <div className="Theme">
+	              <img src={backgroundBlingbling} className="ThemeCard" alt="ImgTheme"/>
+	            </div>
+						</div>
+						<div className='GroupTheme'>
+	            <div className="Theme">
+	              <img src={backgroundFlemmard} className="ThemeCard" alt="ImgTheme"/>
+	            </div>
+							<div className="Theme">
+								<img src={backgroundInsolite} className="ThemeCard" alt="ImgTheme"/>
+							</div>
+						</div>
+	        </div>
+     </div>
 
-			</div>
 		);
 	}
 }
