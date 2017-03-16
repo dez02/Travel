@@ -7,6 +7,14 @@ constructor(props) {
 	this.state = {user: []};
 }
 
+componentDiMount() {
+	this.UserDisplay();
+}
+
+UserDisplay() {
+	return $.getJSON('localhost:')
+}
+
 
     // inserer fonction js avec syntaxe REACT
   render() {
