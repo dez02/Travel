@@ -1,22 +1,26 @@
 import React from 'react';
 import'./cards.css';
-import imageflemmard from './../../Images/flemmard.jpg';
-
 
 class Cards extends React.Component{
 	render(){
 		return(
-			
-			<div className="grid">
-				<div className="item">
-					<img src={imageflemmard} className="userscard" alt="travelBetnGo"/>
 
-					
-				</div>
-				<div className="item"></div>
-				<div className="item"></div>
-				<div className="item"></div>
-			</div>
+			<div className="SectionMainTheme">
+	        <div className="SectionTheme">
+						<div className="GroupTheme">
+	            <div className="Theme aventurier">
+	            </div>
+	            <div className="Theme blingbling">
+	            </div>
+						</div>
+						<div className='GroupTheme'>
+	            <div className="Theme flemmard">
+	            </div>
+							<div className="Theme insolite">
+							</div>
+						</div>
+	        </div>
+     </div>
 
 		);
 	}
