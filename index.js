@@ -6,8 +6,8 @@ const morgan = require('morgan');
 const port = process.env.PORT || 8080; // Define server PORT
 
 // Link To Database
-// mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
-mongoose.connect('mongodb://localhost:27017/test2');
+mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
+// mongoose.connect('mongodb://localhost:27017/test2');
 // tell the app to look for static files in these directories
 app.use(express.static('./server/static/'));
 app.use(express.static('./client/dist/'));
