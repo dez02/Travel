@@ -6,6 +6,8 @@ constructor(props) {
 	super(props);
 	this.state = {user: []};
 }
+
+
     // inserer fonction js avec syntaxe REACT
   render() {
 

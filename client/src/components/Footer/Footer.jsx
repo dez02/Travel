@@ -1,47 +1,51 @@
 import React from "react";
 import {render} from "react-dom";
 import './footer.scss';
-import payment from "../Images/Paypal_payment_icon.png";
 
 class Footer extends React.Component {
+
   render () {
     return (
       <div className="footer">
-          <div className="menu">
-          <div>
-              <ul>
-                  <li> Text text</li>
-                  <li> Text text</li>
-                  <li> Text text</li>
-              </ul>
-</div>
-<div>
-              <ul>
-                  <li> text text </li>
-                  <li> text text </li>
-                  <li> text text </li>
-              </ul>
-</div>
-              <ul>
-                  <li>Contact Info</li>
-                  <li>0033 677886544</li>
-                  <li>Text text text</li>
-              </ul>
-          </div>
+        <div className="bloc_footer">
+            <div className="infos_pratiques">
+              <a href="Guides de voyage">Guides de voyage</a>
+              <a href="Look Pratik : infos vols et bagages">Look Pratik : infos vols et bagages</a>
+              <a href="Nos brochures en ligne">Nos brochures en ligne</a>
+              <a href="Contrats d assurances">Contrats d assurances</a>
+              <a href="Conditions de ventes">Conditions de ventes</a>
+              <a href="Plan de site">Plan de site</a>
+              <a href="Formalités">Formalités</a>              
+            </div>
+            <div className="A_propos">
+            <a href=" Qui sommes-nous ?"> Qui sommes-nous ?</a>
+              <a href="Nos agences de voyages">Nos agences de voyages</a>
+              <a href="Votre espace perso">Votre espace perso</a>
+              <a href="Nos engagements">Nos engagements</a>
+              <a href="La Charte du Voyage">La Charte du Voyage</a>             
+            </div>
 
-          <div className="bas">
-                  <ul>
-                    <li><i className="fa fa-twitter" aria-hidden="true"></i></li>
-                      <li><i className="fa fa-facebook" aria-hidden="true"></i></li>
-                      <li><i className="fa fa-google" aria-hidden="true"></i></li>
-                      <li><i className="fa fa-youtube" aria-hidden="true"></i></li>
-                      <li><i className="fa fa-paypal" aria-hidden="true"></i></li>
-                      <p>Powerd by simplonco</p>
-                      <img src={payment}/>
-                  </ul>
-
+            <div className="Services_clients">
+              <a href=" FAQ - Réponses à vos questions"> FAQ - Réponses à vos questions</a>
+              <a href="Nous contacter">Nous contacter</a>
+              <a href="Votre espace perso">Votre espace perso</a>
+              <a href="Mentions légales">Mentions légales</a>
+              <a href="Chèques vacances">Chèques vacances</a>          
+            </div>
+            <div className="Nos_autres_sites">
+              <a href=" Rejoignez-nous sur Facebook"> Rejoignez-nous sur Facebook</a>
+              <a href="Rejoignez-nous sur Twitter">Rejoignez-nous sur Twitter</a>
+              <a href="Suivez l'actu de BetnGo">Suivez l actu de BetnGo</a>
+              <a href="Partagez vos photos en temps réel">Partagez vos photos en temps réel</a>
+              <a href="Conseils et idées de voyages">Conseils et idées de voyages</a> 
+            </div>
+        </div>
+          <div className="charte">
+            <p>* Prix TTC/pers., base chambre double.<br />
+            (1) (prix d un appel local). 15 € de frais par dossier, en cas de réservation par téléphone. </p>
           </div>
-      </div>
+    </div>
+   
 
 
     );
@@ -49,3 +53,15 @@ class Footer extends React.Component {
 }
 
 export default Footer;
+
+
+
+   
+
+
+
+
+
+
+
+   
