@@ -23,17 +23,8 @@ button, input, select {
     appearance: none;
 }
 
-/*.navbar{
-    border : 1px solid black;
-    height : 50px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}*/
 
-.navbar-right{
+.navbar-right button{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -47,10 +38,13 @@ button, input, select {
     position: absolute;
     right: 10px;
     top: 1px;
+    outline: none;
 }
 
-.navbar a {
+.navbar-right button {
    color: #fff;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
 }
 
 .fa-user-circle-o{

@@ -5,3 +5,9 @@
     left: 50%;
     transform:translateX(-50%);
 }
+
+.buttonLoginBottom{
+    position: relative !important;
+  bottom: 0 !important;
+  right: 'auto';
+}

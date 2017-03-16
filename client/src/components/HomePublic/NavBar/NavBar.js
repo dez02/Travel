@@ -21,12 +21,13 @@ UserDisplay() {
 
     return (
     <div className="navbar">
-      <a href="">
       <div className="navbar-right">
+          <button>
           <i className="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-          <div><p>Sign-up/Log-in</p></div>
+          <div><p>Sign-up</p></div>
+          </button>
       </div>
-       </a>
+       
     </div>
 
     );

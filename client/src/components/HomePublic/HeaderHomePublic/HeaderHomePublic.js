@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './headerhomepublic.css';
 import BackgroundHome from './../../Images/headerPublicHome.jpg';
+import LogoBet from './../../Images/logo.png'
 
 class HeaderHomePublic extends Component {
 
@@ -9,7 +10,8 @@ class HeaderHomePublic extends Component {
 
     return (
     <div className="HeaderHomePublic">
-		<h1>Bet & Go</h1>
+    <img className="logoBet" src={LogoBet} alt="BetandGo"/>
+		<h1>Prêt pour l'aventure?</h1>
       </div>
     );
   }

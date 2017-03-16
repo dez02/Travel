@@ -37,7 +37,7 @@ class SectionHome extends Component {
             </div>
           </div>
         </div>
-        <button>Rejoins-nous</button>
+        {/*<button>Rejoins-nous</button>*/}
       </div>
     );
   }

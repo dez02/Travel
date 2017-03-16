@@ -10,13 +10,22 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
 	background-size: cover;
 	background-position: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
     width: 100%;
     height: 100vh;
 	color: #fff;
+	font-family: roboto, sans-serif;
+	letter-spacing: 2px;
 }
 
 .HeaderHomePublic h1 {
-	font-size: 5rem;
+	font-size: 3rem;
+	padding-top: 30px;
+}
+
+.logoBet{
+	width: 22rem;
+	margin-top: 60px;
 }
