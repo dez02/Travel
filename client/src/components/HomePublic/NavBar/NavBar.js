@@ -8,10 +8,10 @@ class NavBar extends Component {
       <div className="navbar">
         <div className="navbar-right">
           <button>
-            <i className="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-            <div>
-              <p>Sign-up</p>
-            </div>
+              <p className="NavBar-log">
+                 <i className="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                 Sign-up
+              </p>
           </button>
         </div>
       </div>
