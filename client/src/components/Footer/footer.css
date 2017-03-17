@@ -1,0 +1,66 @@
+.footer{
+    background-color: #848C95;
+    font-family: roboto, sans-serif;
+    font-weight: 200;
+}
+.bloc_footer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infos_pratiques, .Services_clients, .A_propos, .Nos_autres_sites{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 60px;
+  margin-left: 80px;
+
+}
+
+.footer .bloc_footer a{
+  color:white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+
+.annexes{
+  color :black;
+  font-size: 16px;
+  margin-top: 2px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.charte{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+
+}
+
+.icones_footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+
+.icones_bloc{
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.icone{
+  padding-right: 10px;
+}
+
+.logo{
+  width: 100px;
+  padding-right: 80px;
+}
+
+

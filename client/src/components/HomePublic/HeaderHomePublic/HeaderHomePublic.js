@@ -10,9 +10,9 @@ class HeaderHomePublic extends Component {
 
     return (
     <div className="HeaderHomePublic">
-    <img className="logoBet" src={LogoBet} alt="BetandGo"/>
-		<h1>Prêt pour l'aventure?</h1>
-      </div>
+      <img className="logoBet fadeIn" src={LogoBet} alt="BetandGo"/>
+		  <h1 className="fadeIn">Prêt pour l'aventure?</h1>
+    </div>
     );
   }
 

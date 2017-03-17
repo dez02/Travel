@@ -1,11 +1,11 @@
 import React from "react";
 import {render} from "react-dom";
-import './footer.scss';
+import './footer.css';
 import Imagesecurity from '../Images/security.png';
 import Imageamericanex from '../Images/americanex.png';
 import Imagevisa from '../Images/visa.png';
 import Imagemastercard from '../Images/mastercard.png';
-import Imagelogo from '../Images/logo.png';
+import Imagelogo from '../Images/blanch.png';
 
 
 class Footer extends React.Component {
@@ -20,9 +20,7 @@ class Footer extends React.Component {
                 <a href="Look Pratik : infos vols et bagages">Look Pratik : infos vols et bagages</a>
                 <a href="Nos brochures en ligne">Nos brochures en ligne</a>
                 <a href="Contrats d assurances">Contrats d assurances</a>
-                <a href="Conditions de ventes">Conditions de ventes</a>
-                <a href="Plan de site">Plan de site</a>
-                <a href="Formalités">Formalités</a>              
+                <a href="Conditions de ventes">Conditions de ventes</a>             
             </div>
             <div className="A_propos">
               <p className="annexes">A propos de BetnGo</p>
@@ -51,19 +49,17 @@ class Footer extends React.Component {
             </div>
           </div>        
             <div className="icones_footer">
-            <div className="icones_bloc">
-              <img src={Imagesecurity} className="icone" alt="icônes"/>
-              <img src={Imageamericanex} className="icone" alt="icônes"/>
-              <img src={Imagevisa} className="icone" alt="icônes"/>
-              <img src={Imagemastercard} className="icone" alt="icônes"/>
-            </div>
-            <div className="logo_footer">
-              <img src={Imagelogo} className="logo" alt="icônes"/>            
-            </div>
+              <div className="icones_bloc">
+                <img src={Imagesecurity} className="icone" alt="icônes"/>
+                <img src={Imageamericanex} className="icone" alt="icônes"/>
+                <img src={Imagevisa} className="icone" alt="icônes"/>
+                <img src={Imagemastercard} className="icone" alt="icônes"/>
+              </div>
+              <div className="logo_footer">
+                <img src={Imagelogo} className="logo" alt="icônes"/>            
+              </div>
             </div>
       </div>
-   
-
     );
   }
 }

@@ -6,8 +6,7 @@
     transform:translateX(-50%);
 }
 
-.buttonLoginBottom{
-    position: relative !important;
-  bottom: 0 !important;
-  right: 'auto';
+.ButtonPos{
+    display: flex;
+    justify-content: center;
 }
