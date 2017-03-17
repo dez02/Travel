@@ -25,14 +25,19 @@ a{
 
 .annexes{
   color :black;
+  font-weight: bold;
   font-size: 16px;
   margin-top: 2px;
+  padding-top: 15px;
   padding-bottom: 10px;
 }
 
-.logo{
-  width: 30px;
-  height: 30px;
+.charte{
+  display: flex;
+  justify-content:center;
+  // align-items:center;
+  color:white;
+
 }
 
 .icones_footer{
@@ -47,6 +52,11 @@ a{
 
 .icone{
   padding-right: 10px;
+}
+
+.logo{
+  width: 50px;
+  height: 20px;
 }
 
 

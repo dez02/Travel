@@ -1,10 +1,11 @@
 import React from "react";
 import {render} from "react-dom";
 import './footer.scss';
+import Imagesecurity from '../Images/security.png';
 import Imageamericanex from '../Images/americanex.png';
 import Imagevisa from '../Images/visa.png';
 import Imagemastercard from '../Images/mastercard.png';
-import Imagelogo from '../Images/logo1.png';
+import Imagelogo from '../Images/logo.png';
 
 
 class Footer extends React.Component {
@@ -48,22 +49,19 @@ class Footer extends React.Component {
                 <a href="Partagez vos photos en temps réel">Partagez vos photos en temps réel</a>
                 <a href="Conseils et idées de voyages">Conseils et idées de voyages</a> 
             </div>
-        </div>
-          <div className="charte">
-            <p>* Prix TTC/pers., base chambre double.<br />
-            (1) (prix d un appel local). 15 € de frais par dossier, en cas de réservation par téléphone. </p>
-          </div>
-          <div className="icones_footer">
-          <div className="icones_bloc">
-            <img src={Imageamericanex} className="icone" alt="icônes"/>
-            <img src={Imagevisa} className="icone" alt="icônes"/>
-            <img src={Imagemastercard} className="icone" alt="icônes"/>
+          </div>        
+            <div className="icones_footer">
+            <div className="icones_bloc">
+              <img src={Imagesecurity} className="icone" alt="icônes"/>
+              <img src={Imageamericanex} className="icone" alt="icônes"/>
+              <img src={Imagevisa} className="icone" alt="icônes"/>
+              <img src={Imagemastercard} className="icone" alt="icônes"/>
             </div>
-          <div className="logo_footer">
-            <img src={Imagelogo} className="logo" alt="icônes"/>            
-          </div>
-          </div>
-    </div>
+            <div className="logo_footer">
+              <img src={Imagelogo} className="logo" alt="icônes"/>            
+            </div>
+            </div>
+      </div>
    
 
     );
