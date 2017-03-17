@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+// import { Parallax, Background } from 'react-parallax';
 import './headerhomepublic.css';
 import BackgroundHome from './../../Images/headerPublicHome.jpg';
-import LogoBet from './../../Images/logo.png'
+import LogoBet from './../../Images/logo.png';
+// import FxScroll from './../FX/FxScroll.js';
 
 class HeaderHomePublic extends Component {
 
@@ -9,14 +11,14 @@ class HeaderHomePublic extends Component {
   render() {
 
     return (
-    <div className="HeaderHomePublic">
-      <img className="logoBet fadeIn" src={LogoBet} alt="BetandGo"/>
-		  <h1 className="fadeIn">Prêt pour l'aventure?</h1>
-    </div>
+
+        <div className="HeaderHomePublic">
+          <img className="logoBet" src={LogoBet} alt="BetandGo"/>
+		      <h1 className="HomeH1">PRET POUR L'AVENTURE?</h1>
+        </div>
+
     );
   }
-
-
 }
 
 

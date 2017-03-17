@@ -43,6 +43,12 @@ button, input, select {
     font-size: 15px;
 }
 
+.navbar-right button:hover{
+    color: #44C767;
+    transition: ease 1s ;
+}
+
+
 .fa-user-circle-o {
     color: #fff;
     padding-right: 10px;
@@ -53,3 +59,8 @@ button, input, select {
     display: flex;
     align-items: center;
 }
+
+.NavBar-log p{
+    font-size: 18px;
+}
+

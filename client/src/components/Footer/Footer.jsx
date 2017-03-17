@@ -5,7 +5,7 @@ import Imagesecurity from '../Images/security.png';
 import Imageamericanex from '../Images/americanex.png';
 import Imagevisa from '../Images/visa.png';
 import Imagemastercard from '../Images/mastercard.png';
-import Imagelogo from '../Images/blanch.png';
+import Imagelogo from '../Images/noir.png';
 
 
 class Footer extends React.Component {
@@ -56,7 +56,9 @@ class Footer extends React.Component {
                 <img src={Imagemastercard} className="icone" alt="icônes"/>
               </div>
               <div className="logo_footer">
+                <a href="" method="post" action="/api/users">
                 <img src={Imagelogo} className="logo" alt="icônes"/>            
+                </a>
               </div>
             </div>
       </div>

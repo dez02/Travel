@@ -1,3 +1,4 @@
+
 .SectionHome {
     font-family: 'Roboto', sans-serif;
     background-color: white;
@@ -37,11 +38,71 @@
 	margin: 30px auto;
 }
 
+.HomeEtape {
+    margin-right:10%;
+    margin-left:10%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+
+.EtapeContenu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 27px;
+}
+.EtapeContenu p{
+    width: 50%;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+
+.HomeEtape hr{
+    height: .05em;
+}
+
+.HomeEtape:nth-child(1) .EtapeImage{
+    background-image: url('./../../Images/daryn.jpg'); 
+}
+
+.HomeEtape:nth-child(2) .EtapeImage{
+    background-image: url('./../../Images/michal.jpg');
+    background-position: bottom;
+}
+
+.HomeEtape:nth-child(3) .EtapeImage{    
+    background-image: url('./../../Images/dominik.jpg');
+    background-position: bottom;
+}
+
+.HomeEtape:nth-child(2) .EtapeContenu{
+    flex-direction: row-reverse;
+}
+
+.EtapeRight{
+    text-align: right;
+}
+
+.EtapeImage{
+    background-size: cover;
+	padding: 0;
+    width: 50%;
+    height: 250px;
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+
+
 .SectionHome-subtitle {
 	color: #44c767;
 	font-weight: bold;
 	font-size: 1.5rem;
+    padding-top: 60px;
 }
+
 
 .HomeItem {
     border: 1px solid #cccccc;
@@ -99,3 +160,4 @@
 .HomeItem p {
     margin-top: 10px;
 }
+

@@ -7,11 +7,11 @@ class NavBar extends Component {
     return (
       <div className="navbar">
         <div className="navbar-right">
-          <button>
-              <p className="NavBar-log">
+          <button className="">
+              <div className="NavBar-log">
                  <i className="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-                 Sign-up
-              </p>
+                 <p>Sign-up</p>
+              </div>
           </button>
         </div>
       </div>

@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
 .footer{
-    background-color: #848C95;
-    font-family: roboto, sans-serif;
-    font-weight: 200;
+    background-color: white;
+    font-weight: 400;
+    font-family: 'Catamaran', 'sans-serif';
 }
 .bloc_footer{
   width: 100%;
@@ -19,7 +22,7 @@
 }
 
 .footer .bloc_footer a{
-  color:white;
+  color:rgb(118, 118, 118);
   text-decoration: none;
   font-weight: 100;
 }
@@ -31,6 +34,7 @@
   margin-top: 2px;
   padding-top: 15px;
   padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .charte{
@@ -64,3 +68,20 @@
 }
 
 
+
+.annexes:after {
+ content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    -moz-transition: width .5s ease, background-color .5s ease;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -ms-transition: width .5s ease, background-color .5s ease;
+    transition: width .5s ease, background-color .5s ease;
+}
+.annexes:hover:after {
+    width: 100%;
+    background: black;
+}
