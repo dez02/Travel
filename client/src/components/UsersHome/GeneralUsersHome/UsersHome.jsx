@@ -11,8 +11,8 @@ class UsersHome extends React.Component {
     render(){
         return(
             <div>
-				<NavBarUser />
-				{/* <NavBarUser user_id={ this.props.params.user_id }/> */}
+				{/* <NavBarUser /> */}
+				<NavBarUser user_id={ this.props.params.user_id }/>
                 <Header/>
                 <AddComponent/>
                 <Cards/>
