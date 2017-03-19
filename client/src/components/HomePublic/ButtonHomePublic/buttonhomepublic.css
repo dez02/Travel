@@ -19,7 +19,6 @@
 
 .buttonHome button:hover {
     background-color: #31338D;
-    transition: background-color .5s ease;
 }
 
 .buttonHome button:active {
