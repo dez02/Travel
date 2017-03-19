@@ -27,7 +27,7 @@ class SectionHome extends Component {
             <h2 className="EtapeTitre EtapeRight">Etape 2</h2>
             <hr/>
             <div className="EtapeContenu">
-                <p>On te propose <span>4 catégories</span> de voyages: Aventure, Bling-Bling, Insolite et Flemmard. Tout nos voyages mystères sont séléctionnés rigoureusement par notre équipe de Globetrotters, nous nous engagons à vous procurer des <span>surprises agréables</span> et des <span>émotions fortes</span> dans des conditions optimales.
+                <p>On te propose <span>4 catégories</span> de voyages: Aventure, Bling-Bling, Insolite et Flemmard. Tous nos voyages mystères sont séléctionnés rigoureusement par notre équipe de Globetrotters, nous nous engagons à te procurer des <span>surprises agréables</span> et des <span>émotions fortes</span> dans des conditions optimales.
                    Maintenent, tu peux choisir la catégorie qui te correspond le mieux et cliquer pour lancer <span>la roulette Bet'n'Go !</span> Notre algorythme maison se met en marche, pas de marche arrière possible, les jeux sont faits!
                    </p>
                 <div className="EtapeImage"></div>
