@@ -69,24 +69,25 @@ apiRouter.route('/user/:user_id').get((req, res) => {
 });
 
 // Route tu /api/travels
-apiRouter.get('/travels', (req, res) => {
-   Travel.count({}, (err, count) => {
-      if (err) return err;
-      console.log(count);
+apiRouter.route('/travels/:travel_category')
+   .get((req, res) => {
+      Travel.count({category : req.params.travel_category}, (err, count) => {
+         if (err) return err;
+         console.log(count);
 
-      let randomNumb = Math.floor(Math.random() * count);
-      console.log(randomNumb);
+         let randomNumb = Math.floor(Math.random() * count);
+         console.log(randomNumb);
 
-      Travel.find({}, (err, rdmTravel) => {
-         if (err) {
-            throw err;
-         }
-         res.json(rdmTravel);
-         // res.redirect("/#/product");
-      })
-      .limit(1)
-      .skip(randomNumb);
-   });
+         Travel.find({category : req.params.travel_category}, (err, rdmTravel) => {
+            if (err) {
+               throw err;
+            }
+            res.json(rdmTravel);
+            // res.redirect("/#/product");
+         })
+         .limit(1)
+         .skip(randomNumb);
+      });
 });
 
 module.exports = apiRouter;

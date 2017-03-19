@@ -12,9 +12,10 @@ class FicheProduit extends Component {
    }
 
    componentDidMount() {
-
+      const travelCategory = this.props.params.travel_category.substr(1);
+      console.log(travelCategory);
      // Appel API pour récupérer un voyage choisi au hasard
-     return fetch('http://localhost:8080/api/travels/', {method: 'get'})
+     return fetch('http://localhost:8080/api/travels/' + travelCategory, {method: 'get'})
      .then(result => result.json())
      .then(travel => {
        // Enregistrement des infos récupérées dans le state du component
@@ -26,14 +27,14 @@ class FicheProduit extends Component {
    }
 
     render () {
-
+console.log(this.state.travel);
       const bgImgStyle = {
          backgroundImage: `url(${ImgRome})`
       };
 
         return (
             <div className="ficheContainer">
-                <h1>BetnGo a choisi pour vous ce fantastique voyage en Italie !</h1>
+                <h1>BetnGo a choisi pour vous ce fantastique voyage en {this.state.country} !</h1>
                 <div className="ficheProduit">
                     <div className="ficheImage" style={bgImgStyle}>
                     </div>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './NavBarUser.css';
 
-class NavBar extends Component {
+class NavBarUser extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,7 +10,6 @@ class NavBar extends Component {
   }
 
   componentDidMount() {
-
     console.log(this.props.user_id);
     // Recuperation de la props user_id en retirant le ":"
     const userID = this.props.user_id.substr(1);
@@ -45,4 +44,4 @@ class NavBar extends Component {
 
 }
 
-export default NavBar;
+export default NavBarUser;

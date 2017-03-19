@@ -4,20 +4,23 @@
 	min-width:100%;
 	background-size: cover;
 	text-align: center;
-	background-image: url(./../../Images/Betbackground.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(./../../Images/Betbackground.jpg);
 	background-position: center;
 	max-width: 100%;
 	min-height: 100%;
 	width: 100vw;
 	height: 100vh;
 	background-attachment: fixed;
+	position: relative;
 }
 
 .buttonHeader{
 	z-index: 1000;
 	display: inline-block;
-	position: relative;
-	padding-top: 35%;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .buttonHeader button {
     background-color: #44c767;
@@ -40,7 +43,7 @@
 
 .buttonHeader button:hover {
     background-color: #31338D;
-    
+
 }
 
 .buttonHeader button:active {

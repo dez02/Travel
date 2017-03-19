@@ -26,14 +26,10 @@ button, input, select {
     appearance: none;
 }
 
+
 .navbar-right button {
     display: flex;
-    /*align-items: center;*/
-    /*justify-content: flex-end;*/
-    /*height: 50px;*/
-    /*width: 200px;*/
-    /*padding-top: 8px;
-    padding-right: 15px;*/
+    z-index: 1000;
     position: absolute;
     right: 30px;
     top: 15px;
@@ -63,4 +59,3 @@ button, input, select {
 .NavBar-log p{
     font-size: 18px;
 }
-
