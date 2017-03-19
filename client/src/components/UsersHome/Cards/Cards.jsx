@@ -13,7 +13,7 @@ class Cards extends React.Component {
                             <div className="description">
                                 <h2>Aventurier :
                                 </h2>
-                                <p>Aller vivre une expérience dans laquelle on ne sait pas précisément ce qui nous attend.
+                                <p>Les aventuriers sont toujours à la recherche de nouveaux défis. Les uns s’enthousiasment d’un périple en mountain bike dans les bois de Norvège, tandis que d’autres préférent explorer une ville étouffante en Moyen-Orient. Si vous êtes à la recherche d’une destination enrichissante pour un voyage à l’aventure, tentez votre chance ici !
                                 </p>
                                 <a href="/#/product" className="validation">Go !</a>
                             </div>
@@ -23,7 +23,7 @@ class Cards extends React.Component {
                             <div className="theme-img blingbling"></div>
                             <div className='description'>
                                 <h2>Bling-Bling :</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Osez le bling-bling! Tu seras traité comme un prince dans un hotel à vegas en train de siroter des cocktails dans ton jaccuzzi ou on te réserve de belles surprises dans des endroits les plus Bling de la planète !</p>
                                 <a href="/#/product" className="validation">Go !</a>
                             </div>
                         </div>
@@ -33,7 +33,7 @@ class Cards extends React.Component {
                             <div className="theme-img flemmard"></div>
                             <div className='description'>
                                 <h2>Flemmard :</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Si tu as la flemme et que tu ne veux rien faire. On s'occupe de tout, t'auras juste à mettre les pieds sous la table, les mains sur le bar et la tête sur ton oreiller!</p>
                                 <a href="/#/product" className="validation">Go !</a>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ class Cards extends React.Component {
                             <div className='description'>
                                 <h2>Insolite
                                 </h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Partir à la rencontre d'une tribu ancestrale, vivre avec des bergers suisse dans un cadre exceptionnel, dormir dans une chambre d'hotel aquatique, tout est possible ici !</p>
                                 <a href="/#/product" className="validation">Go !</a>
                             </div>
                         </div>
