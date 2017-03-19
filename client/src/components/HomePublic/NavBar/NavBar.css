@@ -26,36 +26,35 @@ button, input, select {
     appearance: none;
 }
 
+.navbar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+   padding: 15px 30px;
+   box-sizing: border-box;
+}
 
-.navbar-right button {
+
+.navbar-right {
     display: flex;
+    align-items: center;
     z-index: 1000;
-    position: absolute;
-    right: 30px;
-    top: 15px;
     outline: none;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-}
-
-.navbar-right button:hover{
-    color: #44C767;
     transition: ease 1s ;
 }
 
-
 .fa-user-circle-o {
-    color: #fff;
-    padding-right: 10px;
+   color: #fff;
+   padding-right: 10px;
 }
 
-.NavBar-log {
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
-}
-
-.NavBar-log p{
-    font-size: 18px;
+.navbar-right:hover{
+    color: #44C767;
 }

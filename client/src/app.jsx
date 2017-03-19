@@ -13,6 +13,6 @@ ReactDOM.render((
     {/* <Route path="/home" component={UsersHome}></Route> */}
     <Route path="/home/:user_id" component={UsersHome}></Route>
     {/* <Route path="/product" component={FicheProduit}></Route> */}
-    <Route path="/product/:travel_category" component={FicheProduit}></Route>
+    <Route path="/product/:user_id/:travel_category" component={FicheProduit}></Route>
   </Router>
 ), document.getElementById('react-app'))

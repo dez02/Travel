@@ -1,0 +1,12 @@
+/* NAVBAR USER */
+.navbar-user {
+   justify-content: space-between;
+}
+
+.Homelogoleft{
+   z-index: 1000;
+    height: 60px;
+}
+
+/*==========================================*/
+/*====================*/
