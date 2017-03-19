@@ -11,11 +11,11 @@ class AddComponent extends React.Component{
 		};
 
 	this.handleChange = this.handleChange.bind(this);
-		
+
 	}
 
 
-    handleChange(e){ 
+    handleChange(e){
 
       this.setState({value: e.target.value});
     }
@@ -25,9 +25,9 @@ class AddComponent extends React.Component{
 
 		return(
 			<div className="addcomponent">
-			<h1>CHOISIS TON DEPART!</h1>
-			    <input className='field'type="date" value={this.state.value} onChange={this.handleChange} />
-			    <h2>Maintenant tu choisis ta catégorie et le hasard fait<br /> les choses...</h2>				
+			<h1 className='addcomponentTitle'>CHOISIS TON DEPART!</h1>
+			    <input className='field' type="date" value={this.state.value} onChange={this.handleChange} />
+			    <h2 className='addcomponenth2'>Maintenant tu choisis une catégorie et laisse le hasard décider de la destination ...</h2>
 			</div>
 		);
 	}

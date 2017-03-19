@@ -1,0 +1,20 @@
+.addcomponentTitle{
+  color: #44c767;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.addcomponent{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.field{
+  margin-bottom: 4%;
+  font-size: 2rem;
+}
+
+.addcomponenth2{
+  margin-bottom: 4%;
+}
