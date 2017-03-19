@@ -25,7 +25,6 @@ class FicheProduit extends Component {
    }
 
     render () {
-      console.log(this.state.travel);
 
       const bgImgStyle = {
          backgroundImage: `url(${ImgRome})`

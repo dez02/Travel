@@ -10,8 +10,8 @@ import {Router, Route, hashHistory} from 'react-router';
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={HomePublic}></Route>
-    <Route path="/home" component={UsersHome}></Route>
-    {/* <Route path="/home/:user_id" component={UsersHome}></Route> */}
+    {/* <Route path="/home" component={UsersHome}></Route> */}
+    <Route path="/home/:user_id" component={UsersHome}></Route>
     <Route path="/product" component={FicheProduit}></Route>
   </Router>
 ), document.getElementById('react-app'))

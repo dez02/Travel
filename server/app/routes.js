@@ -50,8 +50,8 @@ apiRouter.route('/users')
     }
     // Redirige vers Home Public quand utilisateur validé.
 	// res.send(this.password);
-   res.redirect('/#/home');
-	// res.redirect(`/#/home/:${user._id}`);
+   // res.redirect('/#/home');
+	res.redirect(`/#/home/:${user._id}`);
   });
 });
 
@@ -77,11 +77,12 @@ apiRouter.get('/travels', (req, res) => {
       let randomNumb = Math.floor(Math.random() * count);
       console.log(randomNumb);
 
-      const randomTravel = Travel.find({}, (err, rdmTravel) => {
+      Travel.find({}, (err, rdmTravel) => {
          if (err) {
             throw err;
          }
          res.json(rdmTravel);
+         // res.redirect("/#/product");
       })
       .limit(1)
       .skip(randomNumb);
