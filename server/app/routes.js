@@ -69,12 +69,22 @@ apiRouter.route('/user/:user_id').get((req, res) => {
 
 // Route tu /api/travels
 apiRouter.get('/travels', (req, res) => {
-  Travel.find({}, (err, travels) => {
-    if (err) {
-      throw err;
-    }
-    res.json(travels);
-  });
+   Travel.count({}, (err, count) => {
+      if (err) return err;
+      console.log(count);
+
+      let randomNumb = Math.floor(Math.random() * count);
+      console.log(randomNumb);
+
+      const randomTravel = Travel.find({}, (err, rdmTravel) => {
+         if (err) {
+            throw err;
+         }
+         res.json(rdmTravel);
+      })
+      .limit(1)
+      .skip(randomNumb);
+   });
 });
 
 module.exports = apiRouter;
