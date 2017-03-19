@@ -20,15 +20,16 @@
 }
 
 .SectionHome-description p {
-	font-size: 1.3rem;
-	width: 60%;
-	line-height: 2rem;
+	font-size: 1.9rem;
+	width: 80%;
+	line-height: 2.6rem;
 }
 
 .SectionHome-description p:first-of-type {
-	font-size: 1.4rem;
+	font-size: 2rem;
 	font-weight: bold;
 	margin: 10px;
+    padding-bottom: 30px;
 }
 
 .SectionHome-title {
@@ -55,6 +56,8 @@
     width: 50%;
     padding: 0 20px;
     font-size: 20px;
+    line-height: 32px;
+
 }
 
 
@@ -88,12 +91,9 @@
     background-size: cover;
 	padding: 0;
     width: 50%;
-    height: 250px;
+    height: 300px;
     border-radius: 4px 4px 0 0;
 }
-
-
-
 
 
 .SectionHome-subtitle {
@@ -161,3 +161,59 @@
     margin-top: 10px;
 }
 
+.EtapeContenu span{
+    color: #44c767;
+	font-weight: bold;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px){
+
+.EtapeContenu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    justify-content: center;
+}
+
+.EtapeTitre .EtapeRight{
+    text-align: center;
+}
+
+
+.EtapeContenu p{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.EtapeImage{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.HomeEtape {
+    margin-right:5%;
+    margin-left:5%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.EtapeRight{
+    text-align: center;
+}
+
+.HomeEtape:nth-child(2) .EtapeContenu{
+    flex-direction: column;
+}
+
+.SectionHome-description p{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+}

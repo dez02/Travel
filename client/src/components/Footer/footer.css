@@ -85,3 +85,11 @@
     width: 100%;
     background: black;
 }
+
+@media (max-width: 768px){
+
+  .icones_footer{
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -18,6 +18,7 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
 	color: #fff;
 	font-family: roboto, sans-serif;
 	letter-spacing: 2px;
+    overflow: hidden;
 }
 
 .HeaderHomePublic h1 {
@@ -78,6 +79,7 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
 .HeaderHomePublic h1{
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+  
 }
 
 
@@ -109,20 +111,41 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
   }
 }
 
-
-.HomeH1:after {
- content: '';
+/*
+.HeaderHomePublic h1:after{
+    content: '';
     display: block;
     margin: auto;
+    animation-name: surlignage;
     height: 5px;
-    width: 0px;
-    background: transparent;
     -moz-transition: width .5s ease, background-color .5s ease;
     -webkit-transition: width .5s ease, background-color .5s ease;
     -ms-transition: width .5s ease, background-color .5s ease;
     transition: width .5s ease, background-color .5s ease;
+
 }
-.HomeH1:hover:after {
-    width: 100%;
+
+@keyframes surlignage{
+      from {
+    
+    width: 0px;
+    background: transparent;
+  }
+
+  to {
+      width: 100%;
     background: white;
+  }
+}*/
+
+@media (max-width: 768px){
+    .HeaderHomePublic h1 {
+	font-size: 2rem;
+	padding-top: 30px;
+    text-align: center;
+}
+.HeaderHomePublic{
+    height: 100vh;
+}
+
 }
