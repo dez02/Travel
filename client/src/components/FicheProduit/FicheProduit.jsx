@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './ficheproduit.css';
 import ImgRome from './../Images/rome.jpg';
+import Footer from './../Footer/Footer.jsx';
 
 class FicheProduit extends Component {
    constructor(props) {
@@ -56,6 +57,7 @@ class FicheProduit extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

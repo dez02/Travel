@@ -3,6 +3,7 @@ import Header from './../Header/Header.jsx';
 import AddComponent from './../AddComponent/AddComponent.jsx';
 import Cards from './../Cards/Cards.jsx';
 import NavBarUser from './../NavBarUser/NavBarUser';
+import Footer from './../../Footer/Footer.jsx';
 
 
 
@@ -15,6 +16,7 @@ class UsersHome extends React.Component {
                 <Header/>
                 <AddComponent/>
                 <Cards/>
+                <Footer/>
             </div>
         )
     }
