@@ -67,6 +67,10 @@ class FicheProduit extends Component {
                                     <span>Retour :</span>
                                     22/02/2017</p>
                             </div>
+                            <form className="confirmBtn-container" method="post" action={"/api/reservation/" + this.props.params.user_id.substr(1) + "/" + this.state.travel._id}>
+                                <input type="submit"  value="Confirmer reservation de ce voyage !"/>
+
+                            </form>
                         </div>
                     </div>
                 </div>

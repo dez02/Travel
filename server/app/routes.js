@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 // Schemas
 const User = require('./models/user');
 const Travel = require('./models/travel');
+const Reservation = require('./models/reservation');
 
 // Create mini app for API
 const apiRouter = new Router();
@@ -56,17 +57,18 @@ apiRouter.route('/users')
 });
 
 // See user profile, update or delete
-apiRouter.route('/user/:user_id').get((req, res) => {
-  User.findById(req.params.user_id, (err, user) => {
-	// if (user == undefined) {
-	// 	res.redirect('/#/');
-	// } else {
-		if (err) {
-			throw err;
-		}
-		res.json(user);
-  });
-});
+apiRouter.route('/user/:user_id')
+   .get((req, res) => {
+     User.findById(req.params.user_id, (err, user) => {
+   	// if (user == undefined) {
+   	// 	res.redirect('/#/');
+   	// } else {
+   		if (err) {
+   			throw err;
+   		}
+   		res.json(user);
+     });
+   });
 
 // Route tu /api/travels
 apiRouter.route('/travels/:travel_category')
@@ -89,5 +91,26 @@ apiRouter.route('/travels/:travel_category')
          .skip(randomNumb);
       });
 });
+
+apiRouter.route('/reservation/:user_id/:travel_id')
+   .post((req, res) => {
+   var reservation = new Reservation;
+   reservation.userId = req.params.user_id;
+   reservation.travelId = req.params.travel_id;
+
+   reservation.save(err => {
+     if (err) {
+       if (err.code == 11000) {
+         return res.json({success: false, message: "La reservation existe déjà"});
+       } else {
+         return res.send(err);
+       }
+     }
+     // Redirige vers Home Public quand utilisateur validé.
+ 	// res.send(this.password);
+    // res.redirect('/#/home');
+ 	res.redirect(`/#/home/:${reservation.userId}`);
+   });
+ });
 
 module.exports = apiRouter;

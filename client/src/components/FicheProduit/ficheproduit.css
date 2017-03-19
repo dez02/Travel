@@ -83,3 +83,16 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
 .ficheDate p {
     padding-right: 40px;
 }
+
+.ficheContainer .confirmBtn-container input {
+   color: #fff;
+   background-color: #44c767;
+   padding: 10px 20px;
+   border-radius: 30px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.ficheContainer .confirmBtn-container input:hover {
+   background-color: #3B1996;
+}
