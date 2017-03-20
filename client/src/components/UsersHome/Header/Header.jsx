@@ -7,7 +7,7 @@ class Header extends React.Component{
 		return(
 			<div className="UserHeader">
 				<div className='buttonHeader'>
-				<button className="validation">ACHETE TON TICKET POUR PARTIR A L AVENTURE</button>
+				
 				</div>
 		</div>
 		);

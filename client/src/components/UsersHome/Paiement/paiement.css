@@ -1,4 +1,4 @@
-.LoginForm{
+.PaymentForm{
     background: rgba(19, 35, 47, 0.9);
     padding: 40px;
     max-width: 600px;
@@ -11,30 +11,30 @@
     top: 20px;
     left: 22%;
     z-index: 2000;
-    /*display: none;*/
 }
 
-.LoginForm h1 {
+.PaymentForm h1 {
   text-align: center;
   color: #ffffff;
   font-weight: 300;
-  margin: 0 0 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-.LoginForm label p{
+.PaymentForm label p{
     color: white;
     font-size: 30px;
     padding-right: 10px;
 
 }
 
-.LoginForm label{
+.PaymentForm label{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
 }
 
-.LoginForm label input {
+.PaymentForm label input {
     color: #8A9297;
     font-size: 30px;
     border: 2px solid #179B77;
@@ -59,4 +59,10 @@
   width: 100%;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.paymentCarte{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
