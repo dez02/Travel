@@ -34,3 +34,9 @@
     position: relative;
     top: 1px;
 }
+
+@media (max-width: 768px){
+ .buttonPayment{
+     top: 20%;
+ }   
+}
