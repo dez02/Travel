@@ -171,11 +171,16 @@
     text-decoration: none;
     text-shadow: 0px 2px 8px #2f6627;
     outline: none;
-    transition: 0.3s;
+    transition: background-color .5s ease;
 }
 
+
 .Theme a:hover {
-       background-color: #2aa34b;
+  background-color: #31338D;
+}
+
+.msgwarning{
+  margin-top: 3%;
 }
 /*MEDIA QUERIES*/
 
@@ -186,16 +191,18 @@
    -moz-border-radius: 10px;
    -webkit-border-radius: 10px;
    border-radius: 10px;
-   margin: 5px;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   min-width: 100vw;
-   min-height: 100vh;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    margin: 5px;
+    min-width: 100vw;
+    min-height: 60vh;
+ }
+ .Theme{
+   margin: 5px;
+
  }
 }

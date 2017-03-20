@@ -49,68 +49,96 @@ apiRouter.route('/users')
         return res.send(err);
       }
     }
-    // Redirige vers Home Public quand utilisateur validé.
-	// res.send(this.password);
-   // res.redirect('/#/home');
-	res.redirect(`/#/home/:${user._id}`);
+    // Redirige vers Home User quand utilisateur validé.
+    res.redirect(`/#/home/:${user._id}`);
   });
 });
 
 // See user profile, update or delete
 apiRouter.route('/user/:user_id')
-   .get((req, res) => {
-     User.findById(req.params.user_id, (err, user) => {
-   	// if (user == undefined) {
-   	// 	res.redirect('/#/');
-   	// } else {
-   		if (err) {
-   			throw err;
-   		}
-   		res.json(user);
-     });
-   });
+	.get((req, res) => {
+	  User.findById(req.params.user_id, (err, user) => {
+	    // if (user == undefined) {
+	    // 	res.redirect('/#/');
+	    // } else {
+	    if (err) {
+	      throw err;
+	    }
+	    res.json(user);
+	  });
+	});
 
 // Route tu /api/travels
 apiRouter.route('/travels/:travel_category')
-   .get((req, res) => {
-      Travel.count({category : req.params.travel_category}, (err, count) => {
-         if (err) return err;
-         console.log(count);
+	.get((req, res) => {
+	  Travel.count({
+	    category: req.params.travel_category
+	  }, (err, count) => {
+	    if (err)
+	      return err;
+	    console.log(count);
 
-         let randomNumb = Math.floor(Math.random() * count);
-         console.log(randomNumb);
+	    let randomNumb = Math.floor(Math.random() * count);
+	    console.log(randomNumb);
 
-         Travel.find({category : req.params.travel_category}, (err, rdmTravel) => {
-            if (err) {
-               throw err;
-            }
-            res.json(rdmTravel);
-            // res.redirect("/#/product");
-         })
-         .limit(1)
-         .skip(randomNumb);
-      });
-});
+	    Travel.find({
+	      category: req.params.travel_category
+	    }, (err, rdmTravel) => {
+	      if (err) {
+	        throw err;
+	      }
+	      res.json(rdmTravel);
+	      // res.redirect("/#/product");
+	    }).limit(1).skip(randomNumb);
+	  });
+	});
+
+apiRouter.route('/reservation/:user_id')
+	.get((req, res) => {
+	  Reservation.find({ userId: req.params.user_id.substr(1) }, (err, reservations) => {
+	    if (err) {
+	      console.log(err);
+	    }
+	    const resa = [];
+		var newTravel;
+	    // res.json(reservations);
+	    reservations.map(reservation => {
+	      Travel.find({ _id: reservation.travelId }, (err, travel) => {
+	        if (err) {
+	          console.log(err);
+	        }
+			newTravel = travel[0];
+			console.log("new travel : ", newTravel);
+			return newTravel;
+	      });
+		  console.log("newTravel 2 : ", newTravel);
+		  resa.push(newTravel);
+		  console.log("this is resa: ", resa);
+	    });
+	    // console.log("this is resa", resa);
+	    res.json(resa);
+	  });
+	});
 
 apiRouter.route('/reservation/:user_id/:travel_id')
-   .post((req, res) => {
-   var reservation = new Reservation;
-   reservation.userId = req.params.user_id;
-   reservation.travelId = req.params.travel_id;
+	.post((req, res) => {
+	  var reservation = new Reservation;
+	  reservation.userId = req.params.user_id;
+	  reservation.travelId = req.params.travel_id;
 
-   reservation.save(err => {
-     if (err) {
-       if (err.code == 11000) {
-         return res.json({success: false, message: "La reservation existe déjà"});
-       } else {
-         return res.send(err);
-       }
-     }
-     // Redirige vers Home Public quand utilisateur validé.
- 	// res.send(this.password);
-    // res.redirect('/#/home');
- 	res.redirect(`/#/home/:${reservation.userId}`);
-   });
- });
+	  reservation.save(err => {
+	    if (err) {
+	      if (err.code == 11000) {
+	        return res.json({success: false, message: "La reservation existe déjà"});
+	      } else {
+	        return res.send(err);
+	      }
+	    }
+	    // Redirige vers Home Public quand utilisateur validé.
+	    // res.send(this.password);
+	    // res.redirect('/#/home');
+	    res.redirect(`/#/home/:${reservation.userId}`);
+	  });
+	});
 
 module.exports = apiRouter;

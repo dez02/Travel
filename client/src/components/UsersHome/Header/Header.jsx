@@ -6,9 +6,6 @@ class Header extends React.Component{
 	render(){
 		return(
 			<div className="UserHeader">
-				<div className='buttonHeader'>
-				
-				</div>
 		</div>
 		);
 	}

@@ -18,8 +18,8 @@ class SectionHome extends Component {
             <h2 className="EtapeTitre">Etape 1</h2>
             <hr/>
             <div className="EtapeContenu">
-                <p>Pour nous rejoindre et accèder à nos offres de <span>voyages mystères</span>, tu dois t'inscire à notre plateforme. Ton prénom, ton nom, ton mail, un mot de passe et le tour est joué!
-                  Ensuite tu accèdes à notre page adhérent ou tu peux directement acheter le nombre de tickets que tu désires. <span>1 ticket = 1 voyage mystère</span>. Chaque ticket possède un numéro unique que tu peux utiliser pour toi ou offrir à tes proches. Nos voyages sont proposés au prix fixe de <span>600 euros</span>, d'une durée d'<span>une semaine</span> (du samedi au samedi), <span>hotel et transport compris.</span>Maintenant place au jeu !</p>
+                <p>Pour nous rejoindre et accèder à nos offres de <span>voyages mystères</span>, tu dois t'inscrire à notre plateforme. Ton prénom, ton nom, ton mail, un mot de passe et le tour est joué!
+                  Ensuite tu accèdes à notre page adhérent ou tu peux directement acheter le nombre de tickets que tu désires. <span>1 ticket = 1 voyage mystère</span>. Chaque ticket possède un numéro unique que tu peux utiliser pour toi ou offrir à tes proches. Nos voyages sont proposés au prix fixe de <span>600 euros</span>, d'une durée d'<span>une semaine</span> (du samedi au samedi), <span>hôtel et transport compris.</span>Maintenant place au jeu !</p>
                 <div className="EtapeImage"></div>
             </div>
           </div>
@@ -38,7 +38,9 @@ class SectionHome extends Component {
             <hr/>
             <div className="EtapeContenu">
 
+
                 <p>La roulette est lancée. Découvre ton voyage, tu n'as plus qu'à te laisser guider, <span>on s'occupe de tout</span>. Surveille ta boite mail, toutes les informations te seront envoyés et <span>heureux tu seras!</span> Pour toute demande d'informations complémentaires, nos agents sont disponibles par mail ou téléphone, n'hésites pas à nous contacter ! Bon voyage :)</p>
+
                 <div className="EtapeImage"></div>
             </div>
           </div>
