@@ -37,6 +37,7 @@ class SectionHome extends Component {
             <h2 className="EtapeTitre">Etape 3</h2>
             <hr/>
             <div className="EtapeContenu">
+
                 <p>La roulette est lancée. Découvre ton voyage, tu n'as plus qu'à te laisser guider, <span>on s'occupe de tout</span>. Surveille ta boite mail, toutes les informations te seront envoyés et <span>heureux tu seras!</span> Pour toute demande d'informations complémentaires, nos agents sont disponibles par mail ou téléphone, n'hésites pas à nous contacter ! Bon voyage :)</p>
                 <div className="EtapeImage"></div>
             </div>
