@@ -18,7 +18,7 @@ class SectionHome extends Component {
             <h2 className="EtapeTitre">Etape 1</h2>
             <hr/>
             <div className="EtapeContenu">
-                <p>Pour nous rejoindre et accèder à nos offres de <span>voyages mystères</span>, tu dois t'inscire à notre plateforme. Ton prénom, ton nom, ton mail, un mot de passe et le tour est joué! 
+                <p>Pour nous rejoindre et accèder à nos offres de <span>voyages mystères</span>, tu dois t'inscire à notre plateforme. Ton prénom, ton nom, ton mail, un mot de passe et le tour est joué!
                   Ensuite tu accèdes à notre page adhérent ou tu peux directement acheter le nombre de tickets que tu désires. <span>1 ticket = 1 voyage mystère</span>. Chaque ticket possède un numéro unique que tu peux utiliser pour toi ou offrir à tes proches. Nos voyages sont proposés au prix fixe de <span>600 euros</span>, d'une durée d'<span>une semaine</span> (du samedi au samedi), <span>hotel et transport compris.</span>Maintenant place au jeu !</p>
                 <div className="EtapeImage"></div>
             </div>
@@ -47,22 +47,22 @@ class SectionHome extends Component {
           <div className="HomeItem">
             <div className="HomeCard"></div>
             <div>
-              <h2>La tournée des bars à Bragh !</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatem architecto saepe sit suscipit omnis natus officia.</p>
+              <h2>La tournée des bars à Prague !</h2>
+              <p>L'allure bohème et caractéristiques de conte de fées de Prague en font une destination idéale pour les vacanciers de la plage qui veulent.</p>
             </div>
           </div>
           <div className="HomeItem">
             <div className="HomeCard"></div>
             <div>
               <h2>Nager à Boston !</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatem architecto saepe sit suscipit omnis natus officia.</p>
+              <p><br></br>Walk the Freedom Trail La première fois que vous visitez Boston et vous obtenez rapidement une idée de l'esprit révolutionnaire. </p>
             </div>
           </div>
           <div className="HomeItem">
             <div className="HomeCard"></div>
             <div>
               <h2>Se prélasser à Rome !</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatem architecto saepe sit suscipit omnis natus officia.</p>
+              <p><br></br>A Rome, les ruines classiques et les lieux de culte chrétiens se dressent à côté des palais de la Renaissance et des fontaines baroques.</p>
             </div>
           </div>
         </div>
