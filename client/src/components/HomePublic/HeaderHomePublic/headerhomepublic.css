@@ -77,37 +77,33 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
 }
 
 .HeaderHomePublic h1{
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-  
+  -webkit-animation-name: fadeInTitre;
+  animation-name: fadeInTitre;
+  transition-delay: 2s;
 }
 
 
-@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fadeInTitre {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    font-size: 10px;
   }
 
   to {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    font-size: 3rem;
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInTitre {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    font-size: 10px;
   }
 
   to {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    font-size: 3rem;
   }
 }
 
