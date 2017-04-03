@@ -3,8 +3,8 @@ const app = express();
 const apiRouter = require('./server/app/routes');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
-const port = process.env.PORT || 8080; // Define server PORT
-
+// const port = process.env.PORT || 8080; // Define server PORT
+app.set('port', (process.env.PORT || 8080));
 // Link To Database
 // mLab database
 mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
@@ -30,6 +30,6 @@ app.use(morgan('dev'));
 app.use('/api', apiRouter);
 
 // start the server
-app.listen(port, err => {
-  console.log(`Server is running on http://localhost:${port} or http://127.0.0.1:${port}'`);
+app.listen(app.get('port'), err => {
+  console.log(`Server is running on http://localhost:${app.get('port')} or http://127.0.0.1:${app.get('port')}`);
 });
