@@ -25,7 +25,7 @@ class NavBarUser extends Component {
     const userID = this.props.user_id.substr(1);
     console.log(userID);
     // Appel API à partir de l'user_id pour récupérer les infos sur le user
-    return fetch('http://localhost:8080/api/user/' + userID, {method: 'get'}).then(result => result.json()).then(user => {
+    return fetch('/api/user/' + userID, {method: 'get'}).then(result => result.json()).then(user => {
       // Enregistrement des infos récupérées dans le state du component
       return this.setState({user});
     }).catch(err => {
