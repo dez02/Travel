@@ -8,8 +8,8 @@ app.set('port', (process.env.PORT || 8080));
 // Link To Database
 // mLab database
 
-// mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
-mongoose.connect(process.env.DATABASE_URI);
+mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
+// mongoose.connect(process.env.DATABASE_URI);
 // Local database just for dev
 // mongoose.connect('mongodb://localhost:27017/test2');
 
