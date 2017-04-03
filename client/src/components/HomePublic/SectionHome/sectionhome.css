@@ -66,7 +66,7 @@
 }
 
 .HomeEtape:nth-child(1) .EtapeImage{
-    background-image: url('./../../Images/daryn.jpg'); 
+    background-image: url('./../../Images/daryn.jpg');
 }
 
 .HomeEtape:nth-child(2) .EtapeImage{
@@ -74,7 +74,7 @@
     background-position: bottom;
 }
 
-.HomeEtape:nth-child(3) .EtapeImage{    
+.HomeEtape:nth-child(3) .EtapeImage{
     background-image: url('./../../Images/dominik.jpg');
     background-position: bottom;
 }
@@ -128,6 +128,8 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 

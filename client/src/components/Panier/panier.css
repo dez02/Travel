@@ -1,0 +1,83 @@
+.PanierContainer::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 18px 15px;
+    border-color: transparent transparent #44c767 transparent;
+}
+
+.PanierContainer {
+	width: 50%;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    background-color: #fff;
+    /*padding: 10px;*/
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #44C767;
+    box-sizing: border-box;
+}
+
+.PanierContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.PanierContainer>p:first-of-type {
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #44C767;
+    padding: 10px;
+}
+
+.PanierContainer .Panier-travel a {
+    padding: 10px;
+}
+
+.Panier-tickets {
+    padding: 10px 0;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(103, 103, 103);
+}
+
+.Panier-tickets>span {
+    color: #44C767;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Panier-travel {
+    border-bottom: 1px solid #fff;
+}
+
+.Panier-travels li:first-of-type p {
+    width: 80%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.Panier-travel:last-of-type {
+    border-bottom: none;
+}
+
+.Panier-travel a {
+    display: block;
+    color: #fff;
+    background-color: #44C767;
+    transition: 0.3s ease;
+    padding: 5px 0;
+}
+
+.Panier-travel a:hover {
+    background-color: #278841;
+}
