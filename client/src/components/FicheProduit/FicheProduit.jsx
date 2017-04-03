@@ -16,7 +16,7 @@ class FicheProduit extends Component {
         const travelCategory = this.props.params.travel_category.substr(1);
         console.log(travelCategory);
         // Appel API pour récupérer un voyage choisi au hasard
-        return fetch('http://localhost:8080/api/travels/' + travelCategory, {method: 'get'}).then(result => result.json()).then(travel => {
+        return fetch('/api/travels/' + travelCategory, {method: 'get'}).then(result => result.json()).then(travel => {
             // Enregistrement des infos récupérées dans le state du component
             return this.setState({travel: travel[0]});
         }).catch(err => {
