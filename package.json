@@ -8,11 +8,11 @@
     "npm": "4.1.2"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node --use_strict index.js",
     "start-dev": "nodemon --use_strict index.js",
     "bundle": "webpack",
     "bundle-dev": "webpack -w",
-    "postinstall": "npm run bundle"
+    "postinstall": "npm run bundle && npm start"
   },
   "author": "",
   "license": "ISC",
