@@ -41,7 +41,7 @@ class NavBarUser extends Component {
 			  <Panier/>
 		  </div>
         <div className="navbar navbar-user">
-          <a className="navbar-left" href="/#/">
+          <a className="navbar-left" href={`/#/home/:${this.state.user._id}`}>
             <img className="Homelogoleft" src={logoBet} alt="logoBetnGo"/>
           </a>
           <button onClick={this.handleClick} className="navbar-right">
