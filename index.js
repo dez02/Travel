@@ -3,14 +3,13 @@ const app = express();
 const apiRouter = require('./server/app/routes');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
+// const port = process.env.PORT || 8080; // Define server PORT
 app.set('port', (process.env.PORT || 8080));
-
 // Link To Database
 // mLab database
-// export MONGOLAB_URI='mongodb://admin:simplonco@ds129720.mlab.com:29720/travel';
-const db_url = process.env.MONGOLAB_URI;
-mongoose.connect(db_url);
-// mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel')
+
+// mongoose.connect('mongodb://admin:simplonco@ds129720.mlab.com:29720/travel');
+mongoose.connect(process.env.DATABASE_URI);
 // Local database just for dev
 // mongoose.connect('mongodb://localhost:27017/test2');
 
