@@ -12,7 +12,7 @@
     "start-dev": "nodemon --use_strict index.js",
     "bundle": "webpack",
     "bundle-dev": "webpack -w",
-    "postinstall": "npm run bundle && npm start"
+    "postinstall": "npm run bundle"
   },
   "author": "",
   "license": "ISC",

@@ -31,5 +31,5 @@ app.use('/api', apiRouter);
 
 // start the server
 app.listen(port, err => {
-  console.log('Server is running on http://localhost:8080 or http://127.0.0.1:8080');
+  console.log(`Server is running on http://localhost:${port} or http://127.0.0.1:${port}'`);
 });
